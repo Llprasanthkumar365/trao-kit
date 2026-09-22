@@ -1,0 +1,10 @@
+# Example Render service for backend (trao-kit)
+services:
+  - type: web
+    name: trao-kit-backend
+    env: docker
+    plan: free
+    repo: <replace-with-your-git-repo>
+    branch: main
+    buildCommand: "npm ci && npm run build"
+    startCommand: "node dist/index.js"
