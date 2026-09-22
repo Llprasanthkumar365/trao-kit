@@ -64,3 +64,41 @@ Frontend (Vercel) — quick steps
 Notes
 - The frontend here is a minimal demo to exercise the backend API; the full builder UI, edit/regenerate features and practice mode are TODO.
 
+Submission
+
+To submit this project for the Trao interview: 
+
+- Provide the public GitHub repository URL: https://github.com/Llprasanthkumar365/trao-kit
+- (Optional) Provide the release/download link with the packaged artifact: https://github.com/Llprasanthkumar365/trao-kit/releases/tag/v1.0.0
+- Include a short note in the submission form/email describing how to run the project:
+
+	1) Clone the repo and install:
+
+	```powershell
+	git clone https://github.com/Llprasanthkumar365/trao-kit.git
+	cd trao-kit
+	npm ci
+	```
+
+	2) Build and test:
+
+	```powershell
+	npm run build
+	npm test
+	```
+
+	3) Run the API locally (dev):
+
+	```powershell
+	npm run dev
+	# then POST to http://localhost:5002/api/generate with JSON { id, jd, company_url, days }
+	```
+
+Notes: Ensure no secrets are included in the repo (use `.env.example`), and point reviewers to the release asset (`trao-kit.zip`) if you attached one.
+
+If you want, I can also add a one-paragraph submission blurb you can paste into Trao's form or email.
+
+Submission blurb
+
+Hi Trao team — please find my submission for the interview task: "trao-kit", a minimal interview-prep pipeline that extracts requirements from a job description, crawls a target company site, and generates practice questions plus a day-by-day study schedule. The public repository with source, build/test instructions, a CLI for batch evaluation, and a packaged release is at https://github.com/Llprasanthkumar365/trao-kit (release: https://github.com/Llprasanthkumar365/trao-kit/releases/tag/v1.0.0). To run locally: clone the repo, run `npm ci`, `npm run build`, and `npm test`. If you need a live demo or have questions, reply here and I will provide a hosted demo URL and usage examples.
+
